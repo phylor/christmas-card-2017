@@ -15,11 +15,11 @@
   <body>
     <a-scene embedded arjs>
       <a-assets>
-        <a-asset-item id='tree' src='anjasbabythethrid.gltf'></a-asset-item>
+        <a-asset-item id='tree' src='tree.gltf'></a-asset-item>
       </a-assets>
 
       <a-marker-camera preset='hiro'>
-        <a-entity id='snow' particle-system='preset: snow; color: #FFF; particleCount: 5000'></a-entity>
+        <a-entity id='snow' particle-system='preset: snow; particleCount: 5000'></a-entity>
         <a-entity gltf-model-next='#tree'></a-entity>
       </a-marker-camera>
     </a-scene>
