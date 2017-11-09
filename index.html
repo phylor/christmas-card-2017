@@ -17,11 +17,16 @@
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
       <a-assets>
         <a-asset-item id='tree' src='tree.gltf'></a-asset-item>
+        <a-asset-item id='santa' src='santa.gltf'></a-asset-item>
       </a-assets>
 
       <a-marker-camera type='pattern' url='tree.patt'>
         <a-entity id='snow' particle-system='preset: snow; particleCount: 5000'></a-entity>
         <a-entity gltf-model-next='#tree'></a-entity>
+        <a-entity position="0 0 0">
+          <a-entity gltf-model-next='#santa' position="-0.5 0 0" scale='0.04 0.04 0.04'></a-entity>
+          <a-animation attribute="rotation" dur="4000" fill="forwards" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+        </a-entity>
       </a-marker-camera>
     </a-scene>
   </body>
