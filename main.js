@@ -1,7 +1,7 @@
-document.addEventListener('marker-visible', function(e) {
-  console.log('DA ISCHES');
+document.addEventListener('marker-shown', function(e) {
+  document.getElementById('message').style.display = 'none';
 });
 
-document.addEventListener('marker-invisible', function(e) {
-  console.log('WEG ISCHES');
+document.addEventListener('marker-hidden', function(e) {
+  document.getElementById('message').style.display = 'block';
 });
