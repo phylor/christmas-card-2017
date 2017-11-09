@@ -6,23 +6,18 @@
     <script src='https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js'></script>
     <script src='aframe-ar.js'></script>
     <script src='main.js'></script>
-    <style>
-      .a-enter-vr {
-        display: none;
-      }
-
-      #message {
-        margin-top: 50px;
-        text-align: center;
-        width: 100%;
-      }
-    </style>
-
+    <link rel='stylesheet' href='main.css'>
   </head>
 
   <body>
     <div id='message'>
-      <h1>BITTE GANZE RAHME FILME</h1>
+      <h1>Für das perfekte Bild</h1>
+      <h1>schwarzen Rahmen komplett erfassen</h1>
+      <image src='tree-transparency.png'/>
+    </div>
+
+    <div id='not-available'>
+      <h1>LEIDER NET UNTERSTÜTZT</h1>
     </div>
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
