@@ -5,5 +5,16 @@
 div {
   text-align: center;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10vh;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+image {
+  max-width: 90%;
+  height: auto;
 }
