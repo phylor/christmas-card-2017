@@ -5932,7 +5932,8 @@ ARjs.Source.prototype._initSourceWebcam = function(onReady, onError) {
 
 	// init default value
 	onError = onError || function(error){
-		alert('Webcam Error\nName: '+error.name + '\nMessage: '+error.message)
+    // alert('Webcam Error\nName: '+error.name + '\nMessage: '+error.message)
+		alert('Leider unterstützt Ihr Browser den aktuellen Inhalt nicht!\nBesuchen Sie ' + window.location.href + ' mit einem anderen Browser!')
 	}
 
 	var domElement = document.createElement('video');
